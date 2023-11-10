@@ -1,0 +1,56 @@
+
+// To build scss to css continuously
+// npm run sass:watch
+
+
+.navbar .btn-outline-light:hover {
+    // So navbars contact button text is dark and not blue
+    color: var(--bs-dark);
+}
+
+.navbar {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header {
+    background: url(../images/header-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+// Not wide enough so this is costumized
+.modal-dialog {
+    max-width: 1040px;
+}
+
+.download {
+    background: url('../images/download-background.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 400px;
+    // Will take the whole width
+    width: 100%;
+    border: none;
+}
+
+
+@media(max-width: 1000px) {
+    // To always center hero picture on smaller screens
+    .hero .image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    // center align text in hero on smaller screens
+    .hero .text-container {
+        text-align: center;
+    }
+}
